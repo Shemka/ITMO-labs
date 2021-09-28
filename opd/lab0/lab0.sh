@@ -100,7 +100,7 @@ chmod 006 croagunk3
 chmod 500 magikarp1/gurdurr
 # ---
 chmod 777 magikarp1
-ln -s croagunk3 magikarp1/espeoncroagunk
+ln -s ../croagunk3 magikarp1/espeoncroagunk
 chmod 533 magikarp1
 
 
@@ -113,7 +113,7 @@ cat -n croagunk3 | grep -i "ke"
 # ---
 wc -l croagunk3 >> croagunk3 2>&1
 # ---
-ls -RlEu | grep '^-.g.*$' | sort -M | head -4
+ls -RlEu | grep '^-.* g[^ ]*$' | sort -M | head -4
 # ---
 (ls -Rl magikarp1 | grep '^-' | sort -rk9) 2>/tmp/stderr
 
